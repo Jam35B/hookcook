@@ -1,0 +1,32 @@
+<%= form_with(model: cook) do |form| %>
+  <% if cook.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(cook.errors.count, "error") %> prohibited this cook from being saved:</h2>
+
+      <ul>
+        <% cook.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :cook_name, style: "display: block" %>
+    <%= form.text_field :cook_name %>
+  </div>
+
+  <div>
+    <%= form.label :cook_adress, style: "display: block" %>
+    <%= form.text_field :cook_adress %>
+  </div>
+
+  <div>
+    <%= form.label :cook_number, style: "display: block" %>
+    <%= form.number_field :cook_number %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

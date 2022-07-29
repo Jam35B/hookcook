@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Kitchen owners</h1>
+
+<div id="kitchen_owners">
+  <% @kitchen_owners.each do |kitchen_owner| %>
+    <%= render kitchen_owner %>
+    <p>
+      <%= link_to "Show this kitchen owner", kitchen_owner %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New kitchen owner", new_kitchen_owner_path %>

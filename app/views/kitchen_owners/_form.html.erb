@@ -1,0 +1,42 @@
+<%= form_with(model: kitchen_owner) do |form| %>
+  <% if kitchen_owner.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(kitchen_owner.errors.count, "error") %> prohibited this kitchen_owner from being saved:</h2>
+
+      <ul>
+        <% kitchen_owner.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :kitchen_name, style: "display: block" %>
+    <%= form.text_field :kitchen_name %>
+  </div>
+
+  <div>
+    <%= form.label :string, style: "display: block" %>
+    <%= form.text_field :string %>
+  </div>
+
+  <div>
+    <%= form.label :kitchen_mail, style: "display: block" %>
+    <%= form.text_field :kitchen_mail %>
+  </div>
+
+  <div>
+    <%= form.label :kitchen_number, style: "display: block" %>
+    <%= form.number_field :kitchen_number %>
+  </div>
+
+  <div>
+    <%= form.label :kitchen_adress, style: "display: block" %>
+    <%= form.text_field :kitchen_adress %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  working_day: MyString
+  reserve_date: 2022-07-25
+  reserve_price: 1
+
+two:
+  working_day: MyString
+  reserve_date: 2022-07-25
+  reserve_price: 1

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  equipment: MyString
+  services: MyString
+  kitchen_adress: MyString
+  kitchen_surface: 1
+  kitchen_description: MyString
+
+two:
+  equipment: MyString
+  services: MyString
+  kitchen_adress: MyString
+  kitchen_surface: 1
+  kitchen_description: MyString
