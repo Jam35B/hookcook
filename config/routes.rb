@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :kitchen_owners
+  devise_for :cooks
+  root "kitchens#index"
   resources :kitchens
   resources :reservations
   resources :cooks

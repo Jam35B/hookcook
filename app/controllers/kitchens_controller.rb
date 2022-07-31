@@ -1,5 +1,6 @@
 class KitchensController < ApplicationController
   before_action :set_kitchen, only: %i[ show edit update destroy ]
+  before_action :authenticate_kitchen_owner!, except: [:index]
 
   # GET /kitchens or /kitchens.json
   def index

@@ -11,4 +11,8 @@
   <% end %>
 </div>
 
-<%= link_to "New kitchen", new_kitchen_path %>
+<% if kitchen_owner_signed_in? %>
+  <%= link_to "New kitchen", new_kitchen_path %>
+<% end %>
+
+
